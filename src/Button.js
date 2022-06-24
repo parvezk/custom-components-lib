@@ -36,7 +36,7 @@ const StyledButton = styled.button`
   border: 10px solid red;
   border-radius: 3em;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 21px;
   display: inline-block;
   overflow: hidden;
   padding: ${(props) =>
