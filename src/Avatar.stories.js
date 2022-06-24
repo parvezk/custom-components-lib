@@ -37,16 +37,16 @@ export const Initials = (args) => (
 );
 
 export const Loading = (args) => (
-    <div>
-      <Avatar {...args} size="large" />
-      <Avatar {...args} size="medium" />
-      <Avatar {...args} size="small" />
-      <Avatar {...args} size="tiny" />
-    </div>
-  );
-  Loading.args = {
-    loading: true,
-  };
+  <div>
+    <Avatar {...args} size="large" />
+    <Avatar {...args} size="medium" />
+    <Avatar {...args} size="small" />
+    <Avatar {...args} size="tiny" />
+  </div>
+);
+Loading.args = {
+  loading: true,
+};
 
 export const Large = (args) => (
   <div>
@@ -59,3 +59,22 @@ export const Large = (args) => (
     />
   </div>
 );
+
+// Other Avatar stories
+
+/*
+ * New story using Controls
+ */
+const Template = (args) => <Avatar {...args} />;
+
+export const Controls = Template.bind({});
+/*
+ * More on args at:
+ * https://storybook.js.org/docs/react/writing-stories/args
+ */
+Controls.args = {
+  loading: false,
+  size: "tiny",
+  username: "Dominic Nguyen",
+  src: "https://avatars2.githubusercontent.com/u/263385",
+};
