@@ -33,7 +33,7 @@ const SIZES = {
 };
 
 const StyledButton = styled.button`
-  border: 10px solid orange;
+  border: none;
   border-radius: 3em;
   cursor: pointer;
   font-size: 21px;
