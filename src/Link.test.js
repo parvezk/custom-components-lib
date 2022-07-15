@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { Link } from "./Link";
 
-test("has a href attribute when rendering with linkWrapper", () => {
+test("new test - has a href attribute when rendering with linkWrapper", () => {
   // eslint-disable-next-line jsx-a11y/anchor-has-content
   const LinkWrapper = (props) => <a {...props} />;
   const { container } = render(

@@ -1,12 +1,8 @@
 import React from "react";
+
 import { GlobalStyle } from "../src/shared/global";
 
-/*
- * Global decorator to apply the styles to all stories
- * Read more about them at:
- * https://storybook.js.org/docs/react/writing-stories/decorators#global-decorators
- */
-
+// Global decorator to apply the styles to all stories
 export const decorators = [
   (Story) => (
     <>
@@ -23,5 +19,11 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+  },
+  a11y: {
+    // the target DOM element
+    element: "#root",
+    // sets the execution mode for the addon
+    manual: false,
   },
 };

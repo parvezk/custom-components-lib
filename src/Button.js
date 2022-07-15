@@ -332,7 +332,10 @@ const applyStyle = (ButtonWrapper) => {
     )
   );
 };
-
+/**
+- Button Use an avatar for attributing actions or content to specific users.
+- Button The user's name should always be present when using Avatar – either printed beside the avatar or in a tooltip.
+**/
 export function Button({
   isDisabled,
   isLoading,
