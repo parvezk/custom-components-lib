@@ -12,6 +12,7 @@
 /build
 
 .env
+storybook-static/
 
 /dist
 dist

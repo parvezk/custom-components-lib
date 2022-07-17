@@ -1,13 +1,6 @@
-# v0.1.1 (Sun Jul 17 2022)
+# v0.1.2 (Sun Jul 17 2022)
 
-#### ⚠️ Pushed to `main`
-
-- add README ([@parvezk](https://github.com/parvezk))
-- Changelog for v0.1.1 ([@parvezk](https://github.com/parvezk))
-
-#### Authors: 1
-
-- Parvez Kose ([@parvezk](https://github.com/parvezk))
+- Updated intro page
 
 ---
 
