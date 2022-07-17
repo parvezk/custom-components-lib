@@ -4,7 +4,7 @@
   "private": false,
   "description": "Custom component library of reusable components",
   "main": "dist/index.js",
-  "repository": "https://github.com/parvezk/learnstorybook-design-system.git",
+  "repository": "https://github.com/parvezk/custom-components-lib.git",
   "author": "Parvez Kose",
   "license": "MIT",
   "dependencies": {
