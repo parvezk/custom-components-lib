@@ -19,6 +19,7 @@ const Image = styled.div`
   vertical-align: top;
   overflow: hidden;
   text-transform: uppercase;
+  border: 2px solid orange;
 
   height: ${sizes.medium}px;
   width: ${sizes.medium}px;
@@ -98,13 +99,13 @@ const Initial = styled.div`
   `}
 `;
 
-export function Avatar({ loading, username, src, size, ...props }) {
+export function AssociateTracker({ loading, username, src, size, ...props }) {
   let avatarFigure = <Icon icon="useralt" />;
   const a11yProps = {};
 
   if (loading) {
     a11yProps["aria-busy"] = true;
-    a11yProps["aria-label"] = "Loading avatar ...";
+    a11yProps["aria-label"] = "Loading AssociateTracker ...";
   } else if (src) {
     avatarFigure = <img src={src} alt={username} />;
   } else {
@@ -117,20 +118,37 @@ export function Avatar({ loading, username, src, size, ...props }) {
   }
 
   return (
-    <Image size={size} loading={loading} src={src} {...a11yProps} {...props}>
-      {avatarFigure}
-    </Image>
+    <article
+      style={{
+        borderLeft: "4px solid crimson",
+        padding: "10px 10px",
+        borderRadius: "5px",
+      }}
+    >
+      <div>
+        <h5>
+          Idle Associates | <strong>2</strong>
+        </h5>
+      </div>
+
+      <Image size={size} loading={loading} src={src} {...a11yProps} {...props}>
+        {avatarFigure}
+      </Image>
+      <Image size={size} loading={loading} src={src} {...a11yProps} {...props}>
+        {avatarFigure}
+      </Image>
+    </article>
   );
 }
 
-Avatar.propTypes = {
+AssociateTracker.propTypes = {
   loading: PropTypes.bool,
   username: PropTypes.string,
   src: PropTypes.string,
   size: PropTypes.oneOf(Object.keys(sizes)),
 };
 
-Avatar.defaultProps = {
+AssociateTracker.defaultProps = {
   loading: false,
   username: "loading",
   src: null,

@@ -1,10 +1,10 @@
 import { Canvas, Meta, Story, ArgsTable } from "@storybook/addon-docs";
 
-import { Avatar } from "./Avatar";
+import { AssociateTracker } from "./AssociateTracker";
 
 <Meta
-  title="Design System/Avatar"
-  component={Avatar}
+  title="Design System/AssociateTracker"
+  component={AssociateTracker}
   parameters={{
     viewMode: "docs",
     previewTabs: {
@@ -15,7 +15,7 @@ import { Avatar } from "./Avatar";
     loading: {
       control: "boolean",
       description:
-        "Use the loading state to indicate that the data Avatar needs is still loading.",
+        "Use the loading state to indicate that the data AssociateTracker needs is still loading.",
       table: {
         type: { summary: "boolean" },
         defaultValue: { summary: false },
@@ -23,7 +23,7 @@ import { Avatar } from "./Avatar";
     },
     username: {
       description:
-        "Avatar falls back to the user’s initial when no image is provided. Supply a `username` and omit `src` to see what this looks like.",
+        "AssociateTracker falls back to the user’s initial when no image is provided. Supply a `username` and omit `src` to see what this looks like.",
       table: {
         defaultValue: {
           summary: "loading",
@@ -31,7 +31,7 @@ import { Avatar } from "./Avatar";
       },
     },
     src: {
-      description: "The URL of the Avatar's image.",
+      description: "The URL of the AssociateTracker's image.",
       table: {
         defaultValue: {
           summary: null,
@@ -50,15 +50,15 @@ import { Avatar } from "./Avatar";
   }}
 />
 
-# Avatar
+# Associate Tracker
 
-## Displays an image that represents a user or organization
+## Displays associate tracking that represents an idle associate at the workstation
 
 Use an avatar for attributing actions or content to specific users.
 
 The user's name should _always_ be present when using Avatar – either printed beside the avatar or in a tooltip.
 
-export const Template = (args) => <Avatar {...args} />;
+export const Template = (args) => <AssociateTracker {...args} />;
 
 <Canvas>
   <Story
@@ -75,7 +75,7 @@ export const Template = (args) => <Avatar {...args} />;
 
 ## Usage
 
-Avatar is used to represent a person or an organization. By default the avatar shows an image and gracefully falls back to the first initial of the username. While hydrating the component you may find it useful to render a skeleton template to indicate that Avatar is awaiting data. Avatars can be grouped with the AvatarList component.
+AssociateTracker is used to represent a person or an organization. By default the avatar shows an image and gracefully falls back to the first initial of the username. While hydrating the component you may find it useful to render a skeleton template to indicate that Avatar is awaiting data. Avatars can be grouped with the AvatarList component.
 
 ## Properties
 
@@ -87,22 +87,22 @@ Avatar is used to represent a person or an organization. By default the avatar s
 
 <Story name="sizes">
   <div>
-    <Avatar
+    <AssociateTracker
       size="large"
       username="Tom Coleman"
       src="https://avatars2.githubusercontent.com/u/132554"
     />
-    <Avatar
+    <AssociateTracker
       size="medium"
       username="Tom Coleman"
       src="https://avatars2.githubusercontent.com/u/132554"
     />
-    <Avatar
+    <AssociateTracker
       size="small"
       username="Tom Coleman"
       src="https://avatars2.githubusercontent.com/u/132554"
     />
-    <Avatar
+    <AssociateTracker
       size="tiny"
       username="Tom Coleman"
       src="https://avatars2.githubusercontent.com/u/132554"
@@ -118,10 +118,10 @@ Avatar should be used sparingly in situations without access to images.
 
 <Story name="initials">
   <div>
-    <Avatar username="Tom Coleman" />
-    <Avatar username="Dominic Nguyen" />
-    <Avatar username="Kyle Suss" />
-    <Avatar username="Michael Shilman" />
+    <AssociateTracker username="Tom Coleman" />
+    <AssociateTracker username="Dominic Nguyen" />
+    <AssociateTracker username="Kyle Suss" />
+    <AssociateTracker username="Michael Shilman" />
   </div>
 </Story>
 
@@ -131,10 +131,10 @@ The loading state is used when the image or username is, well, loading.
 
 <Story name="loading">
   <div>
-    <Avatar size="large" loading />
-    <Avatar size="medium" loading />
-    <Avatar size="small" loading />
-    <Avatar size="tiny" loading />
+    <AssociateTracker size="large" loading />
+    <AssociateTracker size="medium" loading />
+    <AssociateTracker size="small" loading />
+    <AssociateTracker size="tiny" loading />
   </div>
 </Story>
 
