@@ -1,3 +1,15 @@
+# v0.1.10 (Wed Aug 03 2022)
+
+#### ⚠️ Pushed to `main`
+
+- update lock (parvezkx@amazon.com)
+
+#### Authors: 1
+
+- Parvez Kose (parvezkx@amazon.com)
+
+---
+
 # v0.1.9 (Wed Aug 03 2022)
 
 #### ⚠️ Pushed to `main`
