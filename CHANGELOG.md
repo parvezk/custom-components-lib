@@ -1,3 +1,15 @@
+# v0.1.6 (Wed Aug 03 2022)
+
+#### ⚠️ Pushed to `main`
+
+- add back avatar (parvezkx@amazon.com)
+
+#### Authors: 1
+
+- Parvez Kose (parvezkx@amazon.com)
+
+---
+
 # v0.1.5 (Wed Aug 03 2022)
 
 #### ⚠️ Pushed to `main`
