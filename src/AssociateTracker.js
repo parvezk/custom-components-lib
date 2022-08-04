@@ -5,7 +5,7 @@ import { color, typography } from "./shared/styles";
 import { glow } from "./shared/animation";
 import { Icon } from "./Icon";
 
-export const sizes = {
+const sizes = {
   large: 40,
   medium: 28,
   small: 20,
@@ -106,23 +106,6 @@ export const AssociateTracker = ({
   size,
   ...props
 }) => {
-  let avatarFigure = <Icon icon="useralt" />;
-  const a11yProps = {};
-
-  if (loading) {
-    a11yProps["aria-busy"] = true;
-    a11yProps["aria-label"] = "Loading AssociateTracker ...";
-  } else if (src) {
-    avatarFigure = <img src={src} alt={username} />;
-  } else {
-    a11yProps["aria-label"] = username;
-    avatarFigure = (
-      <Initial size={size} aria-hidden="true">
-        {username.substring(0, 1)}
-      </Initial>
-    );
-  }
-
   return (
     <article
       style={{
@@ -136,13 +119,6 @@ export const AssociateTracker = ({
           Idle Associates | <strong>2</strong>
         </h5>
       </div>
-
-      <Image size={size} loading={loading} src={src} {...a11yProps} {...props}>
-        {avatarFigure}
-      </Image>
-      <Image size={size} loading={loading} src={src} {...a11yProps} {...props}>
-        {avatarFigure}
-      </Image>
     </article>
   );
 };
