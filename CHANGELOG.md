@@ -1,3 +1,15 @@
+# v0.1.5 (Wed Aug 03 2022)
+
+#### ⚠️ Pushed to `main`
+
+- feat: add associate tracker (parvezkx@amazon.com)
+
+#### Authors: 1
+
+- Parvez Kose (parvezkx@amazon.com)
+
+---
+
 # v0.1.4 (Sun Jul 17 2022)
 
 
